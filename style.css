@@ -54,4 +54,30 @@ body
     background-color: aqua;
     width: 100%;
     height: 80%;
+    padding-top: 10px;
+
+    /* DISPLAY */
+    display: flex;
+    gap: 10px;
+}
+
+.computer, .player
+{
+    width: 50%;
+    height: 95%;
+    background-color: salmon;
+
+    border: 3px dashed black;
+
+    /* DISPLAY */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gamebox
+{
+    width: 100%;
+    height: 80%;
+    background-color: yellow;
 }
