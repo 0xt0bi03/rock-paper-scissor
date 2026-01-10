@@ -85,7 +85,7 @@ header {
 
 .score {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px 0;
   font-weight: bold;
 }
@@ -110,8 +110,8 @@ header {
 .move {
   flex: 1;
   margin: 5px;
-  background: var(--secondary);
-  color: white;
+  background-color: #777;
+  /* color: white; */
 }
 
 
@@ -119,6 +119,12 @@ header {
 #resetBtn
 {
     font-size: 1rem;
+}
+#resetBtn:hover
+{
+    background-color: #457b9d;
+    color: #1f1f1f;
+    transition: 0.4s ease;
 }
 
 header
@@ -130,4 +136,9 @@ header
 #title
 {
     font-size: 20px;
+}
+
+.move:hover
+{
+    background-color: #999;
 }
