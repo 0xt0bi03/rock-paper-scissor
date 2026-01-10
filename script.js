@@ -84,6 +84,15 @@ toggle1.onclick = toggleTheme;
 toggle2.onclick = toggleTheme;
 
 function toggleTheme() {
-  document.body.classList.toggle("dark");
-  document.body.classList.toggle("light");
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+    toggle1.textContent = "🌙";
+    toggle2.textContent = "🌙";
+  } else {
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    toggle1.textContent = "☀️";
+    toggle2.textContent = "☀️";
+  }
 }
