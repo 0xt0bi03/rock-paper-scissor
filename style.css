@@ -33,12 +33,45 @@ body {
 }
 
 .app {
-  width: 400px;
+  width: 90vw;
+  max-width: 420px;
+  /* min-height: 90vh; */
+
   background: var(--card);
   border-radius: 20px;
   padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   box-shadow: 0 10px 40px rgba(0,0,0,.2);
 }
+
+@media (max-width: 700px) {
+  body {
+    align-items: stretch;
+  }
+
+  .app {
+    width: 100vw;
+    max-width: none;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .hands {
+    font-size: 70px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+
 
 .screen {
   display: none;
@@ -119,12 +152,17 @@ header {
 #resetBtn
 {
     font-size: 1rem;
+    transition: transform 0.2s ease;
 }
 #resetBtn:hover
 {
     background-color: #457b9d;
     color: #1f1f1f;
     transition: 0.4s ease;
+}
+#resetBtn:active
+{
+    transform: scale(0.8);
 }
 
 header
@@ -138,7 +176,17 @@ header
     font-size: 20px;
 }
 
+.move
+{
+    transition: 0.2s ease;
+}
+
 .move:hover
 {
     background-color: #999;
+}
+
+.move:active
+{
+    transform: scale(0.8);
 }
