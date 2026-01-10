@@ -58,7 +58,7 @@ h1,h2 {
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 2rem;
 }
 
 .primary {
@@ -114,3 +114,20 @@ header {
   color: white;
 }
 
+
+
+#resetBtn
+{
+    font-size: 1rem;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#title
+{
+    font-size: 20px;
+}
