@@ -1,5 +1,4 @@
-
-
+// VARIABLES
 const startBtn = document.getElementById("startBtn");
 const resetBtn = document.getElementById("resetBtn");
 const screens = document.querySelectorAll(".screen");
@@ -17,6 +16,7 @@ const toggle2 = document.getElementById("themeToggle2");
 let playerScore = 0;
 let cpuScore = 0;
 
+// STARTING BUTTON
 startBtn.onclick = () => {
   screens[0].classList.remove("active");
   screens[1].classList.add("active");
@@ -35,6 +35,7 @@ moves.forEach(btn => {
   btn.onclick = () => playGame(btn.dataset.move);
 });
 
+// GAME PLAY
 function playGame(playerMove) {
   const cpuMove = getCpuMove();
   playerHand.textContent = getEmoji(playerMove);
@@ -61,20 +62,24 @@ function playGame(playerMove) {
   updateScore();
 }
 
+// COMPUTER MOVE
 function getCpuMove() {
   const moves = ["rock", "paper", "scissors"];
   return moves[Math.floor(Math.random() * 3)];
 }
 
+// IMOJI
 function getEmoji(move) {
   return move === "rock" ? "🪨" : move === "paper" ? "📄" : "✂️";
 }
 
+// UPDATING SCORE
 function updateScore() {
   playerScoreEl.textContent = playerScore;
   cpuScoreEl.textContent = cpuScore;
 }
 
+// THEME CHANGE
 toggle1.onclick = toggleTheme;
 toggle2.onclick = toggleTheme;
 
