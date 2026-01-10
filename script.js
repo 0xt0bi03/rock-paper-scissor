@@ -3,10 +3,15 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+let compscore = 0; let humanscore = 0;
 
-for (let i = 0; i < 5; i++)
-{
-    let num = getRandomInt(1, 3); // e.g., 7
-    console.log(num);
-}
+// function game()
+// {
+//   console.log(`Enter a number b/w 1, 2 & 3: `);
 
+// }
+
+
+// while (compscore < 10 && humanscore < 10)
+// {
+// }
