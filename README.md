@@ -1,2 +1,2 @@
-This is a rock paper Scissor game made using html, css and js.
+This is a Rock Paper Scissor game made using HTML, CSS and JavaScript.
 The game is not yet completed.
